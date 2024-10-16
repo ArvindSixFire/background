@@ -156,6 +156,11 @@ const AdvancedBackgroundChanger = () => {
   const captureImage = () => {
     if (canvasRef.current) {
       const capturedImageData = canvasRef.current.toDataURL('image/jpeg', 1.0);
+      console.log("%c Line:159 🍐 capturedImageData", "color:#ffdd4d", capturedImageData);
+      let link = document.createElement("a")
+      link.href=capturedImageData
+      link.download = 'image';
+      link.click();
       setCapturedImage(capturedImageData);
     }
   };
