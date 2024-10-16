@@ -1,0 +1,168 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.advanced-background-changer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: auto; /* Allow height to scale based on the width */
+  max-width: 1280px; /* Maintain maximum size */
+}
+
+.webcam-video, .result-canvas {
+  width: 100%;
+  height: auto;
+}
+
+.webcam-video {
+  z-index: 1;
+  display: none;
+}
+
+.result-canvas {
+  z-index: 2;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.file-input {
+  display: none;
+}
+
+.button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.image-button {
+  background-color: #45a5497a;
+  color: white;
+}
+
+.image-button:hover {
+  background-color: #45a049;
+}
+
+.webcam-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.webcam-button:hover {
+  background-color: #d32f2f;
+}
+
+.background-button {
+  background-color: #008CBA;
+  color: white;
+}
+
+.background-button:hover {
+  background-color: #007B9A;
+}
+
+.instruction-text {
+  margin-top: 20px;
+  color: #666;
+}
+.video-container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quality-controls {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.quality-controls select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+}
+
+.quality-controls input[type="range"] {
+  width: 200px;
+}
+
+.quality-controls label {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Enhanced video container styling */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.result-canvas {
+  width: 100%;
+  height: auto;
+  display: block;
+}
